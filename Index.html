@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Casa à venda em Juquehy | Litoral Norte SP</title>
+
+<meta name="description" content="Casa à venda em Juquehy, litoral norte de São Paulo. Imóvel com área gourmet, churrasqueira, próxima à praia <br 
+          Piscina e vista pro mar.">
+<meta name="keywords" content="casa em juquehy, casa litoral norte, casa praia sp, imóvel juquehy, casa alto padrão praia">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<img src="imagens/balloon.png" class="logo">
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#galeria">Galeria</a>
+<a href="#localizacao">Localização</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<!-- AQUI VAI O BANNER HERO-->
+
+<div class="hero-text">
+<h1>Casa à venda em Juquehy</h1>
+<p>Seu refúgio no litoral norte de São Paulo</p>
+
+<a class="cta" href="#">
+Agende uma visita
+</a>
+
+</div>
+
+</section>
+
+<!-- SOBRE -->
+
+<section id="sobre" class="section">
+
+<h2>Sobre o imóvel</h2>
+
+<div class="grid">
+
+<div class="box blue">
+<p>4 dormitórios • 5 banheiros</p>
+<p>3 vagas • 249m²</p>
+</div>
+
+<div class="box red">
+<p>Área gourmet • Churrasqueira</p>
+<p>Próximo à praia • Rua tranquila</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section id="galeria" class="section">
+
+<h2>Galeria</h2>
+
+<div class="slider">
+
+<button class="prev">&#10094;</button>
+
+<div class="slides">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+<button class="next">&#10095;</button>
+
+</div>
+
+</section>
+
+<!-- LOCALIZAÇÃO -->
+
+<section id="localizacao" class="section">
+
+<h2>Localização</h2>
+
+<iframe src=""></iframe>  <!--//LOCALIZAÇÃO>>
+
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato" class="section">
+
+<h2>Contato</h2>
+
+<div class="grid center">
+
+<div class="box red contato">
+
+<h3>Agende sua visita</h3>
+
+<a class="cta" href="#">
+Falar no WhatsApp
+</a>
+
+<p><a href="#">Instagram</a></p>
+<p><a href="#">Facebook</a></p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© RE/MAX</p>
+</footer>
+
+<!-- SCRIPT SLIDER -->
+
+<script>
+
+let index = 0
+const slides = document.querySelectorAll(".slides img")
+
+function showSlide(i){
+slides.forEach((img, idx)=>{
+img.style.display = idx === i ? "block" : "none"
+})
+}
+
+function nextSlide(){
+index = (index+1)%slides.length
+showSlide(index)
+}
+
+function prevSlide(){
+index = (index-1+slides.length)%slides.length
+showSlide(index)
+}
+
+document.querySelector(".next").onclick = nextSlide
+document.querySelector(".prev").onclick = prevSlide
+
+setInterval(nextSlide,3000)
+
+showSlide(index)
+
+</script>
+
+</body>
+</html>
