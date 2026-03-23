@@ -210,3 +210,77 @@ footer {
   padding: 20px;
   color: #777;
 }
+/* ========================= */
+/* 📱 RESPONSIVO - CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+
+  /* HERO */
+  .hero-text {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  /* SEÇÕES */
+  .section {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  /* GRID (EMPILHAR) */
+  .grid {
+    flex-direction: column;
+  }
+
+  /* SLIDER */
+  .slider {
+    max-width: 100%;
+  }
+
+  .slides img {
+    max-height: 300px;
+  }
+
+  /* BOTÕES DO SLIDER */
+  .prev, .next {
+    padding: 8px;
+  }
+
+  /* CONTATO */
+  .contato-texto {
+    font-size: 16px;
+  }
+
+  /* ÍCONES */
+  .social img {
+    width: 30px;
+    height: 30px;
+  }
+
+}
