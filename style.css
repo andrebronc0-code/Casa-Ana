@@ -10,10 +10,10 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
-/* HEADER (AGORA AZUL MARINHO) */
+/* HEADER (AGORA AZUL clarINHO) */
 
 header {
-  background: #0f1e2e;
+  background: #003da5;
   padding: 15px 30px;
   display: flex;
   align-items: center;
